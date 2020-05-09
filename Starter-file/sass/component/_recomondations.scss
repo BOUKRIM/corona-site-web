@@ -1,0 +1,95 @@
+body {
+    .recommand {
+        background-color: $multi-blue;
+        text-align: center;
+        .title {
+            &__text {
+                padding-top: 1em;
+                color: $light;
+            }
+        }
+
+        .block-top {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+            width: 90%;
+
+            .items {
+                text-align: center;
+
+                &__text {
+                    text-align: left;
+                    font-size: 30px;
+                    font-weight: 600;
+                    letter-spacing: -1px;
+                    &--color {
+                        color: black;
+                    }
+                    @include Media(laptop) {
+                        text-align: center;
+                    }
+                }
+                &__win {
+                    margin: 0;
+                    color: $yellow;
+                }
+                &__nmr {
+                    margin: 0 auto;
+                    border-radius: 10px;
+                    width: 240px;
+                    background-color: $yellow;
+                    color: $multi-blue;
+                }
+
+                &__link {
+                    font-size: 27px;
+                    color: white;
+                    text-decoration: none;
+                    border-bottom: solid 1px $yellow;
+                }
+                @include Media(laptop) {
+                    padding: 0 0 2em 0;
+                }
+            }
+            #appelle {
+                padding: 9%;
+                @include Media(laptop) {
+                    padding: 0 0 2em 0;
+                }
+            }
+            @include Media(laptop) {
+                text-align: center;
+            }
+            @include Media(laptop) {
+                flex-direction: column;
+                margin: 0 auto;
+            }
+        }
+        .container {
+            background-color: $blue;
+            .block-bot {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                width: 80%;
+                margin: 0 auto;
+                &__title {
+                    text-align: center;
+                }
+                &__icon {
+                    margin: 0 auto;
+                    height: 100px;
+                    width: auto;
+                    padding-bottom: 2em;
+                }
+                &__btn {
+                    width: 75%;
+                    margin: 0 auto 0.5em auto;
+                    @include btn;
+                }
+            }
+        }
+    }
+}

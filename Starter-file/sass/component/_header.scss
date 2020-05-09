@@ -1,0 +1,125 @@
+body {
+    nav {
+        position: fixed;
+        opacity: 0.8;
+        width: 100%;
+        height: 85px;
+        background-color: $light;
+        font-size: 2em;
+        .background {
+            height: 90px;
+            width: 100%;
+
+            .navbar {
+                display: table;
+
+                background-size: cover;
+                margin: 0 auto;
+                width: 90%;
+                height: 90px;
+                
+                .logo {  
+                    opacity: 1;
+                    height: 100%;
+                    
+
+                    img {
+                        height: auto;
+                        width: 20%;
+                        
+                       
+                    }
+                }
+                .menu {
+                    margin-right: 12px;
+                    text-align: right;
+                    display: inline-block;
+                    display: table-cell;
+                    vertical-align:middle;
+                    right: 0px;
+                    
+
+                    &__items {
+                        font-size: 1.5em;
+                        margin: 0 1em;
+                        display: inline-block;
+                        
+                        #arabic {
+                                padding: 3px 8px;
+                                border: 1px solid $dark-blue;
+                                border-radius: 10px;
+                                margin-right: 0.7em;
+                               
+                            }
+                    }
+                }
+            }
+        }
+    }
+    .header {
+        width: 100%;
+        padding-top: 85px;
+        display: block;
+        .background {
+            background-color: $yellow;
+            width: 100%;
+            .alert {
+                margin: 0 auto;
+                width: 100%;
+                text-align: center;
+                &__title {
+
+
+                }
+
+                &__description {
+                    line-height: 1em;
+                    font-weight: bold;
+                    margin: 8px auto;
+                    font-size: 15px;
+                    color: $multi-blue;
+                    max-width: 550px;
+                    padding-bottom: 0.5em;
+                }
+            }
+        }
+        .banner {
+            text-align: center;
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            .image {
+                width: 100%;
+                float: left;
+                &__img {
+                }
+            }
+            .text {
+                padding-top: 8em;
+                line-height: 5.6em;
+                width: 100%;
+                text-align: center;
+                &__title {
+                    font-size: 10vmax;
+                }
+                &__icon {
+                    img {
+                        margin-top: 2em;
+                        height: 100px;
+                        width: auto;
+                    }
+                }
+                &__description {
+                    
+                }
+                .btn {
+                    &__pmr {
+                        @include btn;
+                    }
+                }
+            }
+        }
+    }
+}
+
