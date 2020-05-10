@@ -28,3 +28,11 @@
     @media {$version-mobile}  { @content ; }
  }
 }
+
+
+
+@mixin flex ($alignementHorizo,$alignementVertic) {
+  display: flex;
+  justify-content: $alignementHorizo ;
+  align-items: $alignementVertic;
+}
