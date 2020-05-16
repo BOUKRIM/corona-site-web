@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "start",
+			"problemMatcher": [],
+			"label": "npm: start",
+			"detail": "concurrently \"npm run server\" \"npm run watch:sass\""
+		},
+		{
+			"type": "npm",
+			"script": "install",
+			"problemMatcher": [],
+			"label": "npm: install",
+			"detail": "install dependencies from package"
+		},
+		{
+			"type": "npm",
+			"script": "watch:sass",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: watch:sass",
+			"detail": "node-sass sass/main.scss src/css/style.css -w"
+		}
+	]
+}

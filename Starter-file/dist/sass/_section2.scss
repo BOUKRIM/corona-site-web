@@ -1,0 +1,89 @@
+@import 'variable';
+@import 'mixin';
+
+.section2 {
+  @include flex (center, center);
+
+  text-align: center;
+  margin: 20px auto;
+  width: 85vw;
+
+  &__content {
+    h2 {
+      color: $eighth-color;
+      font-size: 20px;
+      text-align: center;
+      padding: 0 33px;
+
+
+    }
+
+    p {
+      color: $third-color;
+      font-size: 17px;
+      line-height: 30px;
+      font-weight: bold;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      padding: 0 30px;
+    }
+
+    a {
+      color: $fourth-Color;
+      text-decoration: none;
+      border: 1px solid $eighth-color;
+      padding: 6px 130px;
+      background-color: $eighth-color;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+  }
+}
+
+//tablette
+@media only screen and (max-width:768px) {
+
+  .section2 {
+    display: block;
+    text-align: center;
+
+    &__content {
+
+      p {
+        padding: 0 100px;
+      }
+    }
+
+    .section2__img1 {
+      width: 400px;
+    }
+  }
+
+}
+
+//mobile 
+@media only screen and (max-width:375px) {
+  .section2 {
+    .section2__img1 {
+      width: 250px;
+    }
+
+    &__content {
+
+      h2 {
+        font-size: 17px;
+      }
+
+      a {
+        padding: 2px 50px;
+      }
+
+      p {
+        padding: 0 20px;
+        font-size: 14px;
+      }
+
+    }
+  }
+}

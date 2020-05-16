@@ -1,0 +1,58 @@
+@import 'variable';
+@import 'mixin';
+.section3 {
+    width: 40vw;
+    margin-top: 10px;
+    margin: auto;
+    h2 {
+        text-align: center;
+        color: $eighth-color;
+    }
+    &__groups {
+        @include flex (space-between,center);
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        
+
+    }
+
+}
+
+@media  only screen  and (max-width:768px) {
+
+.section3 {
+
+h2 {
+            font-size: 20px;
+        }
+   
+&__groups {
+        font-size: 14px;
+    }
+}
+}
+
+//mobile 
+
+@media only screen and (max-width:375px) {
+
+    .section3 {
+        width: 84vw;
+
+        h2 {
+            font-size: 17px;
+        }
+&__groups {
+    display: block;
+}        
+  
+
+ 
+    }
+
+
+}
+
+
+

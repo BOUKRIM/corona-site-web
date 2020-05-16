@@ -1,0 +1,383 @@
+// #myProgress {
+//     position: relative;
+//     width: 100%;
+//     height: 30px;
+//     background-color: grey;
+// }
+
+// #myBar {
+//     position: absolute;
+//     width: 1%;
+//     height: 100%;
+//     background-color: green;
+// }
+
+
+/* ----------------------------------------------------------- preambule --------------------------------------------------------------- */
+
+.preambule {
+
+    text-align: center;
+    display: block;
+
+    &__content {
+
+        width: 80vw;
+        margin: 10px auto 20px auto;
+        background-color: $ninth-color;
+        border-radius: 5px;
+        padding-bottom: 20px;
+
+
+        .preambule__title {
+            color: $eighth-color;
+            margin: 0;
+
+        }
+
+        .preambule__parag {
+            width: 70vw;
+            margin: auto;
+
+        }
+
+        .preambule__border {
+            border-bottom: 2px solid $first-color;
+            width: 20vw;
+            margin: 10px auto;
+
+
+        }
+    }
+
+    &__link {
+        background-color: $eighth-color;
+        border: none;
+        color: $fourth-Color;
+        padding: 15px 20px;
+        text-decoration: none;
+        font-size: 1.2em;
+        cursor: pointer;
+        border-radius: 2px;
+
+    }
+}
+
+/* ----------------------------------------------------------- End preambule --------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------- test1 --------------------------------------------------------------- */
+
+.test1 {
+
+    // display: none;
+
+    &__quest1 {
+        width: 50vw;
+        margin: auto;
+        font-size: 1.5em;
+        color: $eleventh-color;
+        margin-bottom: 30px;
+        text-align: left;
+
+    }
+
+    &__content {
+
+        text-align: left;
+        width: 60vw;
+        margin: auto;
+        font-size: 1.2em;
+
+        .test1__info {
+            background-color: $first-color;
+            color: $fifth-color;
+            padding: 10px 10px;
+            border-radius: 2px;
+            font-size: 1.2em;
+        }
+
+        .buttons {
+
+            display: flex;
+            justify-content: space-between;
+
+            .test1__precedante {
+
+                background-color: $eighth-color;
+                border: none;
+                color: $fourth-Color;
+                padding: 15px 20px;
+                text-decoration: none;
+                font-size: 1.2em;
+                cursor: pointer;
+                border-radius: 2px;
+
+            }
+
+            .test1__suivante {
+                background-color: $eighth-color;
+                border: none;
+                color: $fourth-Color;
+                padding: 15px 20px;
+                text-decoration: none;
+                font-size: 1.2em;
+                cursor: pointer;
+                border-radius: 2px;
+
+
+            }
+        }
+
+
+    }
+
+
+}
+
+/* ----------------------------------------------------------- End test1--------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------- input --------------------------------------------------------------- */
+
+
+
+
+input {
+    font-size: 1.2em;
+    padding: 6px 0;
+    color: $eighth-color;
+    border: 3px solid $eighth-color;
+    width: 15vw;
+    font-size: 1.2em;
+}
+
+/*-------------------------------------------------------- result ---------------------------------------------------------------------------*/
+
+
+#result {
+  
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+  
+&__test {
+   
+    background-color: $eighth-color;
+   
+   padding: 10px 16px;
+   color: $first-color;
+   border-radius: 6px;
+}    
+   
+&__btns {
+display: flex;
+justify-content: space-between;
+
+    #result__btn {
+   
+        background-color: $eighth-color;
+        border: none;
+        color: $fourth-Color;
+        padding: 15px 20px;
+        text-decoration: none;
+        font-size: 1.2em;
+        cursor: pointer;
+        border-radius: 2px;
+        margin-top: 20px;
+    }
+}
+
+}
+
+
+
+
+// /*-------------------------------------------------------- END test2---------------------------------------------------------------------------*/
+
+// /*--------------------------------------------------------test3---------------------------------------------------------------------------*/
+
+// .test3 {
+// //    display: block;
+//     &__quest3 {
+//         width: 50vw;
+//         margin: auto;
+//         font-size: 1.5em;
+//         color: $eleventh-color;
+//         margin-bottom: 40px;
+//     }
+//     &__btns {
+//         width: 75vw;
+//         margin: auto;
+//         display: flex;
+//         justify-content: space-around;
+
+//         .test3__btn {
+//             background-color: $eighth-color;
+//             border: none;
+//             color:$fourth-Color;
+//             padding: 15px 32px;
+//             text-decoration: none;
+//             font-size: 1.5em;
+//             cursor: pointer;
+//             border-radius: 2px;
+//         }
+
+//     }
+
+
+// }
+
+// /*-------------------------------------------------------- END test3---------------------------------------------------------------------------*/
+
+// /*--------------------------------------------------------test4---------------------------------------------------------------------------*/
+// .test4 {
+//     // display: none;
+//     &__quest4 {
+//         width: 50vw;
+//         margin: auto;
+//         font-size: 1.5em;
+//         color: $eleventh-color;
+//         margin-bottom: 40px;
+//     }
+//     &__btns {
+//         width: 75vw;
+//         margin: auto;
+//         display: flex;
+//         justify-content: space-around;
+
+//         .test4__btn {
+//             background-color: $eighth-color;
+//             border: none;
+//             color: $fourth-Color;
+//             padding: 15px 32px;
+//             text-decoration: none;
+//             font-size: 1.5em;
+//             cursor: pointer;
+//             border-radius: 2px;
+//         }
+
+//     }
+// }
+// /*-------------------------------------------------------- END test4---------------------------------------------------------------------------*/
+// /*--------------------------------------------------------test5---------------------------------------------------------------------------*/
+// .test5 {
+//     // display: none;
+//     &__quest5 {
+//         width: 50vw;
+//         margin: auto;
+//         font-size: 1.5em;
+//         color: $eleventh-color;
+//         margin-bottom: 40px;
+//     }
+//     &__btns {
+//         width: 75vw;
+//         margin: auto;
+//         display: flex;
+//         justify-content: space-around;
+
+//         .test5__btn {
+//             background-color: $eighth-color;
+//             border: none;
+//             color: $fourth-Color;
+//             padding: 15px 32px;
+//             text-decoration: none;
+//             font-size: 1.5em;
+//             cursor: pointer;
+//             border-radius: 2px;
+//         }
+
+//     }
+// }
+// /*-------------------------------------------------------- END test5---------------------------------------------------------------------------*/
+
+// /*--------------------------------------------------------test6---------------------------------------------------------------------------*/
+// .test6 {
+//     // display: none;
+//     &__quest6 {
+//         width: 50vw;
+//         margin: auto;
+//         font-size: 1.5em;
+//         color: $eleventh-color;
+//         margin-bottom: 40px;
+//     }
+//     &__btns {
+//         width: 75vw;
+//         margin: auto;
+//         display: flex;
+//         justify-content: space-around;
+
+//         .test6__btn {
+//             background-color: $eighth-color;
+//             border: none;
+//             color: $fourth-Color;
+//             padding: 15px 32px;
+//             text-decoration: none;
+//             font-size: 1.5em;
+//             cursor: pointer;
+//             border-radius: 2px;
+//         }
+
+//     }
+// }
+// /*--------------------------------------------------------END test6---------------------------------------------------------------------------*/
+
+// /*--------------------------------------------------------test7---------------------------------------------------------------------------*/
+// .test7 {
+//     // display: none;
+//     &__quest7 {
+//         width: 50vw;
+//         margin: auto;
+//         font-size: 1.5em;
+//         color: $eleventh-color;
+//         margin-bottom: 40px;
+//     }
+//     &__btns {
+//         width: 75vw;
+//         margin: auto;
+//         display: flex;
+//         justify-content: space-around;
+
+//         .test7__btn {
+//             background-color: $eighth-color;
+//             border: none;
+//             color: $fourth-Color;
+//             padding: 15px 32px;
+//             text-decoration: none;
+//             font-size: 1.5em;
+//             cursor: pointer;
+//             border-radius: 2px;
+//         }
+
+//     }
+// }
+// /*--------------------------------------------------------END test7---------------------------------------------------------------------------*/
+// /*-------------------------------------------------------- test8---------------------------------------------------------------------------*/
+// .test8 {
+//     // display: none;
+//     &__quest8 {
+//         width: 50vw;
+//         margin: auto;
+//         font-size: 1.5em;
+//         color: $eleventh-color;
+//         margin-bottom: 40px;
+//     }
+//     &__btns {
+//         width: 75vw;
+//         margin: auto;
+//         display: flex;
+//         justify-content: space-around;
+
+//         .test8__btn {
+//             background-color: $eighth-color;
+//             border: none;
+//             color: $fourth-Color;
+//             padding: 15px 32px;
+//             text-decoration: none;
+//             font-size: 1.5em;
+//             cursor: pointer;
+//             border-radius: 2px;
+//         }
+
+//     }
+// }

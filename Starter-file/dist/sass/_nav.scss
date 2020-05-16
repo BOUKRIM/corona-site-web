@@ -1,0 +1,61 @@
+@import 'variable';
+@import 'mixin';
+
+.header {
+    @include flex (space-between, center);
+    padding: 12px 50px;
+    background-image: url(../../../Design/Assets/png/Mergedbar-53.png);
+    height: 6vh;
+
+    img {
+        width: 50px;
+        margin-top: 10px;
+    }
+
+    &__lists {
+        @include flex(none, none);
+        display: flex;
+        list-style-type: none;
+
+        li {
+            padding: 0 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: $fifth-color
+        }
+
+        .header__list1 {
+            color: $fifth-color;
+            font-weight: bolder;
+        }
+
+        .header__list2 {
+            color: $eighth-color;
+            font-weight: bolder;
+        }
+
+        .header__list3 {
+            color: $eighth-color;
+            font-weight: bolder;
+            border: 1px solid $eighth-color;
+            padding: 1px 10px;
+            border-radius: 9px;
+        }
+    }
+
+}
+
+@media only screen and (max-width:375px) {
+    .header {
+
+        padding: 12px 17px;
+
+        .header__lists {
+            li {
+                padding: 0 9px;
+            }
+        }
+    }
+}

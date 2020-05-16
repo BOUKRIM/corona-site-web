@@ -1,0 +1,5 @@
+@mixin flex ($alignementHorizo,$alignementVertic) {
+    display: flex;
+    justify-content: $alignementHorizo ;
+    align-items: $alignementVertic;
+}

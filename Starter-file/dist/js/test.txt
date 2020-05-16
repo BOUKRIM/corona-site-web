@@ -1,0 +1,23 @@
+qst1 : var temperature
+qst2: var temperatureDegree
+qst3 : var augmentationToux
+qst4 : var douleurMusculaireCourbature
+qst5 : var malGorge
+qst6 : var diarrhee
+qst7 : var fatigue
+qst8 : var fatigueDegree
+qst9 : var probAlimentation
+qst10 : var probRespiratoire
+qst11 : var sensation
+qst12 :var autreSymptome
+qst13 : var age
+qst14 : var poidsTaille
+qst15 : var maladieCardiaque
+qst16 : var diabetique
+qst17 : var cancer
+qst18 : var maladieRespiratoire
+qst19 : var insuffisanceRenale
+qst20 : var maladieFoie
+qst21 : var enceinte
+qst22 : var maladieConnue
+qst23 : var traitementImmuno

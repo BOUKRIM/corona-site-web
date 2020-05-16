@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/Starter-file/favicon.ico">
+  <title>Test</title>
+</head>
+
+<body>
+  <!-- Navbar section -->
+  <nav class="header">
+    <div class="header__logo">
+      <img src="../../Design/Assets/png/logo__sante-17.png" alt="" />
+    </div>
+    <div class="header__items">
+      <ul class="header__lists">
+        <li><a class="header__list1" href="conseil.html"> Conseil </a></li>
+        <li><a class="header__list2" href="../../index.html"> Acceuil </a></li>
+        <!-- <li><a class="header__list3" href="#"> عربي <i class="fas fa-globe"></i> </a> </li> -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- END Navbar section -->
+
+  <!-- Multi steps form -->
+  <!-- <ol class="list">
+      <li>
+        <div class="circle">1</div>
+      </li>
+      <li>
+        <div class="circle">2</div>
+      </li>
+      <li>
+        <div class="circle">3</div>
+      </li>
+      <li>
+        <div class="circle">4</div>
+      </li>
+    </ol> -->
+  <!-- Multi steps form -->
+
+
+  <!-- Progress bar -->
+
+  <!-- <div id="myProgress">
+    <div id="myBar"></div>
+  </div> -->
+
+
+  <!-- Préambule  -->
+  <div id="preambule" class="preambule">
+    <div class="preambule__content">
+      <h1 class="preambule__title"> PRÉAMBULE</h1>
+      <p class="preambule__parag">« L’application est fournie à titre gratuit, en l’état, uniquement à des fins
+        d’information pour contribuer à
+        fluidifier la prise en charge des personnes par les services d’urgences pendant l’épidémie de Coronavirus
+        COVID-19.
+        L’exhaustivité, l’exactitude, le caractère à jour des informations et contenus mis à disposition dans cette
+        application, ou leur adéquation à des finalités particulières, ne sont pas garantis.L’utilisateur reconnaît que
+        l’application y compris le test et les autres
+        informations qu’elle contient, ne constituent en aucun cas un avis, une recommandation, un examen, un
+        diagnostic, une prescription, ou tout autre
+        acte de nature médicale notamment établi ou réalisé par un médecin ou un pharmacien. L’utilisation de
+        l’application
+        et de son contenu ne remplace en aucun cas le conseil nécessaire donné par votre médecin ou votre pharmacien ou
+        tout
+        autre professionnel de santé compétent dans chaque cas particulier. </p>
+
+      <p class="preambule__border"></p>
+      <p class="preambule__parag"> Tout examen ou décision de l’utilisateur doit être
+        réalisé ou prise de manière autonome sur la base de l’information scientifique et clinique pertinente, de la
+        notice
+        officielle du produit concerné le cas échéant et en cas de doute, en consultant un médecin compétent.
+        Les informations mises à disposition dans le cadre de l’application servent uniquement d’informations de premier
+        niveau. L’absence d’avertissement au sujet d’un risque ne signifie pas qu’il n’existe pas. »</p>
+    </div>
+    <button id="start" class="preambule__link" href="#" onclick="startTest()"> Démarer le test </button>
+  </div>
+  <!-- END préambule -->
+
+
+  <!-- test1 -->
+  <div class="test1">
+    <div class="test1__quest1">
+      <p id="qst" class="qst"> </p>
+      <form id="form" class="test1__form">
+
+      </form>
+    </div>
+    <div class="test1__content">
+      <p id="test-info" class="test1__info">
+
+        Anti-inflammatoires (ibuprofène, cortisone ...)
+        Vous pouvez augmenter l'état de l'infection, sauf dans le radiateur.
+        Et pour vous, vous prenez des médicaments anti-alot
+        Vous avez aucun doute, il est nécessaire de consulter votre médecin .
+      </p>
+      <div class="buttons">
+        <div> <button id="btn-previous" class="test1__precedante" onclick="loadPreviousQuestion()"> la question
+            précédante</button></div>
+        <div><button id="btn-next" class="test1__suivante" onclick="loadNextQuestion()"> la question suivante</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div id="result">
+    <div id="result__test">
+
+
+    </div>
+    <div id="result__btns">
+      <div></div>
+      <div> <button id="result__btn" onclick="restartTest ()">reprendre le test</button> </div>
+    </div>
+  </div>
+
+
+
+  <!-- END test1 -->
+
+  <!-- test2 -->
+
+  <!-- <div class="test2">
+    <div class="test2__content">
+      <p id ="qst2" class="test2__parag"></p>
+      input 
+      <div id="text-suffix" class="test2__degre">degrés</div>
+    </div>
+    <div class="test2__btns">
+      <button id="pre" class="test2__btn">  </button>
+      <button id="suiv" class="test2__btn"> </button>
+    </div>
+
+  </div>
+ <!- END -->
+
+  <!--test3 -->
+
+  <!-- <div class="test3">
+    <div class="test3__quest3">
+      <p class="test3__parag">Ces derniers jours, avez-vous noté une forte diminution ou perte de votre goût ou de votre
+        odorat ?</p>
+      <form class="test3__form">
+        <input type="radio" name="btn1">
+        <label>Oui</label><br>
+        <input type="radio" name="btn1">
+        <label>Non</label><br>
+      </form>
+    </div>
+    <div class="test3__btns">
+      <button class="test3__btn"> la question précédante </button>
+      <button class="test3__btn"> la question suivante </button>
+    </div>
+
+  </div> -->
+
+  <!-- END test3 -->
+
+  <!-- test4 -->
+  <!-- <div class="test4">
+    <div class="test4__quest4">
+      <p class="test4__parag">Ces derniers jours, avez-vous eu un mal de gorge et/ou des douleurs musculaires et/ou des
+        courbatures inhabituelles ?</p>
+      <form class="test4__form">
+        <input type="radio" name="input">
+        <label>Oui</label><br>
+        <input type="radio" name="input">
+        <label>Non</label><br>
+      </form>
+    </div>
+    <div class="test4__btns">
+      <button class="test4__btn"> la question précédante </button>
+      <button class="test4__btn"> la question suivante </button>
+    </div>
+
+  </div> -->
+
+  <!-- END test4 -->
+
+  <!-- test5 -->
+  <!-- <div class="test5">
+    <div class="test5__quest5">
+      <p class="test5__parag">Ces dernières 24 heures, avez-vous de la diarrhée ?
+        Avec au moins 3 selles molles.</p>
+      <form class="test5__form">
+        <input type="radio" name="input">
+        <label>Oui</label><br>
+        <input type="radio" name="input">
+        <label>Non</label><br>
+      </form>
+    </div>
+    <div class="test5__btns">
+      <button class="test5__btn"> la question précédante </button>
+      <button class="test5__btn"> la question suivante </button>
+    </div>
+  </div> -->
+  <!-- END test5 -->
+
+  <!-- test6 -->
+  <!-- <div class="test6">
+    <div class="test6__quest6">
+      <p class="test6__parag">Ces derniers jours, avez-vous une fatigue inhabituelle ?</p>
+      <form class="test6__form">
+        <input type="radio" name="input">
+        <label>Oui</label><br>
+        <input type="radio" name="input">
+        <label>Non</label><br>
+      </form>
+    </div>
+    <div class="test6__btns">
+      <button class="test6__btn"> la question précédante </button>
+      <button class="test6__btn"> la question suivante </button>
+    </div>
+  </div> -->
+  <!-- END test6 -->
+
+  <!-- test7 -->
+  <!-- <div class="test7">
+    <div class="test7__quest7">
+      <p class="test7__parag">Depuis 24 heures ou plus, êtes-vous dans l'impossibilité de vous alimenter ou de boire ?
+      </p>
+      <form class="test7__form">
+        <input type="radio" name="input">
+        <label>Oui</label><br>
+        <input type="radio" name="input">
+        <label>Non</label><br>
+      </form>
+    </div>
+    <div class="test7__btns">
+      <button class="test7__btn"> la question précédante </button>
+      <button class="test7__btn"> la question suivante </button>
+    </div>
+  </div> -->
+
+  <!-- END test7 -->
+
+  <!-- test8 -->
+  <!-- <div class="test8">
+    <div class="test8__quest8">
+      <p class="test8__parag">Ces dernières 24 heures, avez-vous noté un manque de souffle inhabituel lorsque vous
+        parlez ou faites un petit effort ?
+      </p>
+      <form class="test8__form">
+        <input type="radio" name="input">
+        <label>Oui</label><br>
+        <input type="radio" name="input">
+        <label>Non</label><br>
+      </form>
+    </div>
+    <div class="test8__btns">
+      <button class="test8__btn"> la question précédante </button>
+      <button class="test8__btn"> la question suivante </button>
+    </div>
+  </div> -->
+
+  <!-- END test8 -->
+
+
+  <!-- Section4 -->
+  <div class="section4">
+    <h1>Recommandations officielles</h1>
+    <div class="section4__recomm">
+      <ul>
+        <li>Si vous pensez être malade,</li>
+        <li>évitez les endroits publics.</li>
+        <li>Ne rendez pas visite aux personnes fragiles.</li>
+        <li>Évitez de sortir de chez vous.</li>
+        <li>Respectez les mesures barrière (lavage de main, masque).</li>
+        <li>Surveillez vos symptômes, l’évolution de votre température.</li>
+        <li>corporelle et recherchez un avis médical.</li>
+      </ul>
+
+      <div class="section4__contact">
+        <h3>Apple Gratuit</h3>
+        <span>080 100 47 47</span>
+        <p>www.sante.gov.ma</p>
+      </div>
+    </div>
+  </div>
+  <!--END Section4 -->
+  <!-- Section5 -->
+  <!-- <div class="section5">
+    <h2>Vous pensez avoir été exposé au Coronavirus COVID-19 et avez des symptômes ? </h2>
+    <img src="../../Design/Assets/png/1f637.png" alt="">
+    <p>Demarer le test</p>
+  </div> -->
+  <!--END Section5 -->
+  <!-- Footer -->
+  <section class="footer">
+    <!-- <img class="footer__img" src="../../Design/Assets/png/logo__sante-17.png" alt="" /> -->
+    <div class="footer__lists">
+      <div class="footer__left">
+        <ul>
+          <!-- <li class="footer__left1"> FRAN <i class="fas fa-globe footer__glob"></i></li> -->
+          <li> <a class="footer__left2" href="../../index.html">Acceuil</a> </li>
+          <li class="footer__left3"> Conseil</li>
+        </ul>
+      </div>
+      <div class="footer__middle">
+        <h2>Contacts utiles</h2>
+        <p>Chiffre économique "Alo épidémie vigilance"</p>
+        <h4>080 100 47 47</h4>
+        <p>Aide médicale urgente</p>
+        <h4>114</h4>
+      </div>
+      <p>
+        Algorithme d'orientation mis à jour sur les recommandations en vigueur
+        au 22/03/2020 à 16h15. Ce site d’information n’est pas un dispositif médical,
+        il ne délivre pas d’avis médical. Projet solidaire d'urgence,financé par l’Alliance
+        Digitale contre le COVID-19 : @maladiecovid19
+      </p>
+    </div>
+
+  </section>
+  <!--END Footer -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

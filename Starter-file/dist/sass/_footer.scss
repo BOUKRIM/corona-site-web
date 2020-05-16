@@ -1,0 +1,122 @@
+@import 'variable';
+@import 'mixin';
+
+.footer {
+
+    text-align: center;
+    background-color: $fourth-Color;
+
+&__lists {
+        @include flex (space-around,none);
+        .footer__middle {
+            h2 {
+                color: $eighth-color;
+                font-weight: bold;
+                font-size: 17px;
+                cursor: pointer;
+
+            }
+
+            h4 {
+                color: $sixth-color;
+                font-weight: bolder;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+            p {
+                color: $fifth-color;
+                font-weight: bolder;
+                cursor: pointer;
+            }
+
+        }
+
+        p {
+            width: 30vw;
+            color: $third-color;
+            font-size: 15px;
+            cursor: pointer;
+
+        }
+
+        .footer__left {
+            li {
+                color: $fifth-color;
+                list-style-type: none;
+                font-weight: bold;
+                a {
+                    text-decoration: none;
+                    color:$tenth-color;
+                    font-weight: bolder;
+                }
+            }
+
+            .footer__left1 {
+                padding: 0px 14px;
+                font-size: 16px;
+                border-radius: 10px;
+                border: 1px solid $eighth-color;
+                font-weight: bolder;
+                cursor: pointer;
+
+                .footer__glob {
+                    color: $first-color;
+            }
+        }
+    }
+}
+}
+
+@media only screen and (max-width:768px) {
+
+    .footer__lists {
+        justify-content: space-evenly;
+    p {
+        display: none;
+    }
+}
+
+}
+
+@media only screen and (max-width:375px) {
+  .footer {
+    &__lists {
+
+        p{
+            display: none;
+        }
+        
+       
+        .footer__middle {
+            margin-top: 7px;
+            font-weight: 10px;
+            h2 {
+                
+                font-size: 13px;
+               
+            }
+
+            h4 {
+                font-size: 13px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+
+        }
+
+        .footer__left {
+            .footer__left1 {
+                padding: 3px 13px;
+                font-size: 13px;
+                border-radius: 5px;
+            }
+        }
+       
+        
+    
+  }
+  }
+}

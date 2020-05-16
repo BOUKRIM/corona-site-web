@@ -1,0 +1,39 @@
+@import 'variable';
+@import 'mixin';
+.section1 {
+   line-height: 20px;
+   background-color: $first-color;
+   padding: 20px;
+  
+  
+&__parag {
+       font-size: 15px ;
+        width: 45vw;
+       margin: 0 auto;
+       text-align: center;
+       color:#1078AD;
+
+   }
+
+&__title {
+
+    text-align: center;
+    font-size: 17px;
+
+
+   }
+}
+
+//mobile 
+
+ @media only screen  and (max-width:375px) {
+   
+   .section1 {
+      .section1__parag {
+       
+        width:90vw;
+        
+     
+   }
+ }
+}

@@ -1,0 +1,30 @@
+@import 'nav' ;
+@import 'tests';
+@import 'section1' ;
+@import 'protection';
+@import 'information';
+@import 'section2';
+@import 'section3';
+@import 'variable';
+@import 'transmission';
+@import 'section4';
+@import 'section5';
+@import 'footer';
+@import 'mixin';
+@import 'stepBar';
+
+
+
+
+
+
+body {
+
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+
+    
+
+}
